@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <bsp_12864.h>
 #include "main.h"
 #include "i2c.h"
 #include "gpio.h"
@@ -88,7 +89,10 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
     OLED_Init();
-  //  OLED_Clear();
+    OLED_Clear();
+    OLED_Show_String(1, 2, "Win-win");  // 测试 8*16 字符
+    OLED_Show_String(1, 4, "cooperation");
+    //  OLED_Clear();
   //  OLED_Show_String(0,0,"hello oled!");
   /* USER CODE END 2 */
 
