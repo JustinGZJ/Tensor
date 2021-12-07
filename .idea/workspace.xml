@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="Tensor" targetName="Tensor.elf" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df5e6564-a956-44d0-9403-f9206858eddf" name="变更" comment="">
+    <list default="true" id="df5e6564-a956-44d0-9403-f9206858eddf" name="变更" comment="能够显示但是还有点问题">
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/ascii/mbascii.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbfunccoils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbfuncdiag.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbfuncdisc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbfuncholding.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbfuncinput.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbfuncother.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/functions/mbutils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mb.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbascii.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbcrc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbframe.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbfunc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbproto.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbrtu.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/mbutils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/include/port.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/mb.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/port/port.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/port/portevent.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/port/portserial.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/port/porttimer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/rtu/mbcrc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/rtu/mbrtu.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/tcp/mbtcp.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/tcp/mbtcp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/bsp_12864.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/bsp_12864.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/i2c.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/i2c.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensor.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/Tensor.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +81,27 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Core/ThirdParty/modbus" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Core/ThirdParty/modbus" />
+      <recent name="$PROJECT_DIR$/Core/ThirdParty" />
+      <recent name="$PROJECT_DIR$/Core/ThirdParty/Modbus" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Core/ThirdParty/modbus/include" />
       <recent name="$PROJECT_DIR$/Core/Inc" />
       <recent name="$PROJECT_DIR$/Core/Src" />
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD Tensor">
     <configuration name="Tensor.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tensor" TARGET_NAME="Tensor.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tensor" RUN_TARGET_NAME="Tensor.elf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -87,8 +133,30 @@
       <option name="presentableId" value="Default" />
       <updated>1638362243759</updated>
       <workItem from="1638362253081" duration="2994000" />
-      <workItem from="1638447160620" duration="7800000" />
+      <workItem from="1638447160620" duration="15703000" />
+      <workItem from="1638770139572" duration="3468000" />
+      <workItem from="1638773681223" duration="105000" />
+      <workItem from="1638773789168" duration="253000" />
+      <workItem from="1638774047731" duration="43000" />
+      <workItem from="1638774614471" duration="5573000" />
+      <workItem from="1638858634790" duration="15000" />
+      <workItem from="1638890667805" duration="1000" />
     </task>
+    <task id="LOCAL-00001" summary="能够显示但是还有点问题">
+      <created>1638455464866</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638455464867</updated>
+    </task>
+    <task id="LOCAL-00002" summary="能够显示但是还有点问题">
+      <created>1638455472060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638455472060</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +172,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="能够显示但是还有点问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="能够显示但是还有点问题" />
   </component>
 </project>

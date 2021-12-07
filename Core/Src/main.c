@@ -17,9 +17,11 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <bsp_12864.h>
+#include <mb.h>
 #include "main.h"
 #include "i2c.h"
+#include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -65,7 +67,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    int value = 0;
+    char str[10] = {0};
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -87,18 +90,25 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
+  MX_TIM3_Init();
+  MX_USART1_UART_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-    OLED_Init();
-    OLED_Clear();
-    OLED_Show_String(1, 2, "Win-win");  // 测试 8*16 字符
-    OLED_Show_String(1, 4, "cooperation");
-    //  OLED_Clear();
-  //  OLED_Show_String(0,0,"hello oled!");
+//    OLED_Init();
+//    OLED_Clear();
+//    OLED_Show_String(0, 2, "Win-win");  // 测试 8*16 字符
+//    OLED_Show_String(0, 4, "cooperation");
+//    //  OLED_Clear();
+//    OLED_Show_String(0, 0, "hello oled!");
+    eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_ODD);		// 初始化modbus为RTU方式，波特率9600，奇校验
+    eMBEnable();									// 使能modbus协议栈
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     while (1) {
+        eMBPoll();
+    //    OLED_Show_String(4, 6, itoa(value++, str, 10));
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

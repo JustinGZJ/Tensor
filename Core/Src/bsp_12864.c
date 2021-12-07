@@ -9,6 +9,7 @@
 
 
 #include "bsp_font.h"
+#define COLUM_OFFSET 2
 
 
 
@@ -38,9 +39,10 @@ void OLED_Write_Data(uint8_t data)
   */
 void OLED_Set_Pos(uint8_t x, uint8_t y)
 {
+
     OLED_Write_Cmd(0xb0 + y);                 // 写入页地址
-    OLED_Write_Cmd((x & 0x0f));               // 写入列的地址 (低半字节)
-    OLED_Write_Cmd(((x & 0xf0) >> 4) | 0x10); // 写入列的地址(高半字节)
+    OLED_Write_Cmd((x+COLUM_OFFSET & 0x0f));               // 写入列的地址 (低半字节)
+    OLED_Write_Cmd(((x+COLUM_OFFSET & 0xf0) >> 4) | 0x10); // 写入列的地址(高半字节)
 }
 
 /**
