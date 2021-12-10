@@ -26,6 +26,7 @@
 /* ----------------------- Modbus includes ----------------------------------*/
 #include "mb.h"
 #include "mbport.h"
+#include "bsp_stepper_spta_speed.h"
 
 /* ----------------------- static functions ---------------------------------*/
 static void prvvTIMERExpiredISR( void );
@@ -87,7 +88,7 @@ static void prvvTIMERExpiredISR( void )
 {
     ( void )pxMBPortCBTimerExpired(  );
 }
-/// 定时器4中断服务程序
+/// 定时器3中断服务程序
 void TIM3_IRQHandler(void)
 {
     if(__HAL_TIM_GET_FLAG(&htim3, TIM_FLAG_UPDATE))			// 更新中断标记被置位
@@ -96,5 +97,6 @@ void TIM3_IRQHandler(void)
         prvvTIMERExpiredISR();								// 通知modbus3.5个字符等待时间到
     }
 }
+
 
 

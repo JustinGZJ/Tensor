@@ -17,16 +17,21 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <mb.h>
 #include "main.h"
 #include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "u8g2.h"
+#include "mb.h"
+#include "retartget.h"
+#include "oled_init.h"
+#include "bsp_stepper_init.h"
+#include "bsp_stepper_spta_speed.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -69,6 +74,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
     int value = 0;
     char str[10] = {0};
+    u8g2_t u8g2;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -93,22 +99,47 @@ int main(void)
   MX_TIM3_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 //    OLED_Init();
 //    OLED_Clear();
+//    //  OLED_Clear();
 //    OLED_Show_String(0, 2, "Win-win");  // 测试 8*16 字符
 //    OLED_Show_String(0, 4, "cooperation");
-//    //  OLED_Clear();
 //    OLED_Show_String(0, 0, "hello oled!");
-    eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_ODD);		// 初始化modbus为RTU方式，波特率9600，奇校验
-    eMBEnable();									// 使能modbus协议栈
+    eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_ODD);        // 初始化modbus为RTU方式，波特率9600，奇校验
+    eMBEnable();                                    // 使能modbus协议栈
+    RetargetInit(&huart2);
+    u8g2Init(&u8g2);
+    stepper_Init();
+
+    /* USER CODE BEGIN 2 */
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     while (1) {
         eMBPoll();
-    //    OLED_Show_String(4, 6, itoa(value++, str, 10));
+
+        u8g2_SetFont(&u8g2, u8g2_font_torussansbold8_8r);
+        u8g2_DrawCircle(&u8g2, 64, 32, 30, U8G2_DRAW_ALL);
+        u8g2_DrawStr(&u8g2,0,64,"hello");
+        u8g2_DrawStr(&u8g2,0,8*3,"hello");
+        u8g2_DrawStr(&u8g2, 0, 8, "STM32");
+        u8g2_SendBuffer(&u8g2);
+        Stepper_Move_SPTA(400000,48000,30000);
+        u8g2_DrawStr(&u8g2,0,8*4,"hello");
+
+        HAL_Delay(10000);
+
+//        for (int i = 0; i < 100; ++i) {
+//            Stepper_Move_SPTA(400,48000,30000);
+//           // u8g2_DrawStr(&u8g2,0,64,"hello");
+//            HAL_Delay(1000);
+//            Stepper_Move_SPTA(-400,48000,30000);
+//        }
+
+        //    OLED_Show_String(4, 6, itoa(value++, str, 10));
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

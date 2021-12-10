@@ -46,12 +46,20 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(Core/Inc Core/ThirdParty/modbus/include Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include)
+include_directories(Core/Inc
+        Core/ThirdParty/modbus/include
+        Drivers/STM32F1xx_HAL_Driver/Inc
+        Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
+        Drivers/CMSIS/Device/ST/STM32F1xx/Include
+        Drivers/CMSIS/Include
+        Core/ThirdParty/u8g2
+        Core/ThirdParty/modbus/include)
 
 add_definitions(-DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_FULL_LL_DRIVER)
 
-file(GLOB_RECURSE SOURCES "startup/*.*" "Drivers/*.*" "Core/*.*")
-
+file(GLOB_RECURSE SOURCES "startup/*.*"
+                          "Drivers/*.*"
+                          "Core/*.*")
 MESSAGE("include folder: "${SOURCES})
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103C8Tx_FLASH.ld)
 
