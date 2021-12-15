@@ -14,23 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df5e6564-a956-44d0-9403-f9206858eddf" name="变更" comment="添加freemodbus 未测试">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/bsp_stepper_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/bsp_stepper_init.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/bsp_stepper_spta_speed.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/bsp_stepper_spta_speed.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/oled_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/oled_init.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_spta_speed.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_spta_speed.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensor.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/Tensor.ioc" afterDir="false" />
-    </list>
+    <list default="true" id="df5e6564-a956-44d0-9403-f9206858eddf" name="变更" comment="SPTA电机启动" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +123,7 @@
       <workItem from="1638953059871" duration="8466000" />
       <workItem from="1639008746554" duration="20318000" />
       <workItem from="1639106855567" duration="9116000" />
-      <workItem from="1639458175578" duration="25690000" />
+      <workItem from="1639458175578" duration="26360000" />
     </task>
     <task id="LOCAL-00001" summary="能够显示但是还有点问题">
       <created>1638455464866</created>
@@ -169,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638890774097</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SPTA电机启动">
+      <created>1639557590011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639557590012</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +181,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="能够显示但是还有点问题" />
     <MESSAGE value="添加freemodbus 未测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加freemodbus 未测试" />
+    <MESSAGE value="SPTA电机启动" />
+    <option name="LAST_COMMIT_MESSAGE" value="SPTA电机启动" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
