@@ -123,7 +123,7 @@
       <workItem from="1638953059871" duration="8466000" />
       <workItem from="1639008746554" duration="20318000" />
       <workItem from="1639106855567" duration="9116000" />
-      <workItem from="1639458175578" duration="26360000" />
+      <workItem from="1639458175578" duration="26731000" />
     </task>
     <task id="LOCAL-00001" summary="能够显示但是还有点问题">
       <created>1638455464866</created>
@@ -160,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639557590012</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="SPTA电机启动">
+      <created>1639558721026</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639558721026</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
