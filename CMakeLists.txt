@@ -58,8 +58,8 @@ include_directories(Core/Inc
 add_definitions(-DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_FULL_LL_DRIVER)
 
 file(GLOB_RECURSE SOURCES "startup/*.*"
-                          "Drivers/*.*"
-                          "Core/*.*")
+        "Drivers/*.*"
+        "Core/*.*")
 MESSAGE("include folder: "${SOURCES})
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103C8Tx_FLASH.ld)
 

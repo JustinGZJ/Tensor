@@ -1,19 +1,4 @@
-/**
-  ******************************************************************************
-  * @file    bsp_stepper_init.c
-  * @author  fire
-  * @version V1.0
-  * @date    2019-xx-xx
-  * @brief   步进电机初始化
-  ******************************************************************************
-  * @attention
-  *
-  * 实验平台:野火  STM32 F407 开发板  
-  * 论坛    :http://www.firebbs.cn
-  * 淘宝    :http://firestm32.taobao.com
-  *
-  ******************************************************************************
-  */
+
 #include "bsp_stepper_init.h"
 
 TIM_HandleTypeDef TIM_StepperHandle = {0};
@@ -43,6 +28,7 @@ static void Stepper_GPIO_Config(void) {
     /*Motor 使能引脚 初始化*/
     GPIO_InitStruct.Pin = MOTOR_EN_PIN;
     HAL_GPIO_Init(MOTOR_EN_GPIO_PORT, &GPIO_InitStruct);
+    HAL_GPIO_WritePin(MOTOR_EN_GPIO_PORT,MOTOR_EN_PIN,GPIO_PIN_SET);
 
     /*选择要控制的GPIO引脚*/
     GPIO_InitStruct.Pin = MOTOR_PUL_PIN;
@@ -62,7 +48,7 @@ static void Stepper_TIM_Init(void) {
     TIM_StepperHandle.Instance = MOTOR_TIM;
     TIM_StepperHandle.Init.Prescaler = MOTOR_TIM_PRESCALER - 1;
     TIM_StepperHandle.Init.CounterMode = TIM_COUNTERMODE_UP;
-    TIM_StepperHandle.Init.Period = MOTOR_TIM_PERIOD;
+    TIM_StepperHandle.Init.Period = MOTOR_TIM_PERIOD-1;
     TIM_StepperHandle.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
     HAL_TIM_Base_Init(&TIM_StepperHandle);
 

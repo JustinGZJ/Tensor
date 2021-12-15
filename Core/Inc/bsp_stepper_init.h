@@ -11,13 +11,12 @@
 #define MOTOR_TIM_IRQHandler            TIM2_IRQHandler
 
 /*频率相关参数*/
-//定时器实际时钟频率为：84MHz/(TIM_PRESCALER-1)
-//其中 高级定时器的 频率为168MHz,其他定时器为84MHz
-//84M/(MOTOR_TIM_PERIOD-1)=500KHz
-//具体需要的频率可以自己计算
-#define MOTOR_TIM_PRESCALER             2
+#define T
+#define MOTOR_TIM_CLK                   (72000000)
+#define MOTOR_TIM_PRESCALER             (72)
 // 定义定时器中断周期设置为10
-#define MOTOR_TIM_PERIOD                72
+#define MOTOR_TIM_PERIOD                (2) //500K
+#define MOTOR_TIM_FREQ              (MOTOR_TIM_CLK/MOTOR_TIM_PRESCALER/MOTOR_TIM_PERIOD)
 
 
 //Motor 方向 

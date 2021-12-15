@@ -1,9 +1,9 @@
 #ifndef __OLED_INIT_H
 #define __OLED_INIT_H
 
-#include "u8g2.h"
 #include "main.h"
 #include "i2c.h"
+#include "u8g2.h"
 
 #define OLED_ADDRESS 0x78
 uint8_t u8x8_byte_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);

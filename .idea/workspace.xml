@@ -15,74 +15,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df5e6564-a956-44d0-9403-f9206858eddf" name="变更" comment="添加freemodbus 未测试">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/bsp_stepper_init.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/bsp_stepper_spta_speed.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/oled_init.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/retartget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/oled_init.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/retartget.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_init.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_spta_speed.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/mui.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/mui.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/mui_u8g2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/mui_u8g2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_bitmap.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_box.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_buffer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_button.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_circle.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_cleardisplay.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_d_memory.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_d_setup.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_font.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_fonts.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_hvline.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_input_value.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_intersection.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_kerning.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_line.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_ll_hvline.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_message.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_polygon.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_selection_list.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8g2_setup.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8log.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8log_u8g2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8log_u8x8.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_8x8.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_byte.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_cad.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_capture.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_d_ssd1306_128x64_noname.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_debounce.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_display.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_fonts.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_gpio.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_input_value.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_message.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_selection_list.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_setup.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_string.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_u16toa.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ThirdParty/u8g2/u8x8_u8toa.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/bsp_stepper_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/bsp_stepper_init.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/bsp_stepper_spta_speed.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/bsp_stepper_spta_speed.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/oled_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/oled_init.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_spta_speed.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stepper/bsp_stepper_spta_speed.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/syscalls.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/syscalls.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/ThirdParty/modbus/port/porttimer.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ThirdParty/modbus/port/porttimer.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensor.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/Tensor.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +74,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -144,7 +90,7 @@
       <recent name="$PROJECT_DIR$/Core/ThirdParty/modbus/include" />
     </key>
   </component>
-  <component name="RunManager" selected="OpenOCD 下载并运行.OCD Tensor">
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD Tensor">
     <configuration name="Tensor.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tensor" TARGET_NAME="Tensor.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tensor" RUN_TARGET_NAME="Tensor.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -153,6 +99,11 @@
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="OCD Tensor" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tensor" TARGET_NAME="Tensor.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="Tensor" RUN_TARGET_NAME="Tensor.elf">
@@ -164,8 +115,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake 应用程序.Tensor.elf" />
-      <item itemvalue="OpenOCD 下载并运行.OCD Tensor" />
+      <item itemvalue="CMake Application.Tensor.elf" />
+      <item itemvalue="OpenOCD Download &amp; Run.OCD Tensor" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -187,6 +138,8 @@
       <workItem from="1638890667805" duration="141000" />
       <workItem from="1638953059871" duration="8466000" />
       <workItem from="1639008746554" duration="20318000" />
+      <workItem from="1639106855567" duration="9116000" />
+      <workItem from="1639458175578" duration="25690000" />
     </task>
     <task id="LOCAL-00001" summary="能够显示但是还有点问题">
       <created>1638455464866</created>
@@ -232,10 +185,22 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="能够显示但是还有点问题" />
     <MESSAGE value="添加freemodbus 未测试" />
     <option name="LAST_COMMIT_MESSAGE" value="添加freemodbus 未测试" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/ThirdParty/modbus/port/port.c</url>
+          <line>56</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
